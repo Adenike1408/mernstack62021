@@ -21,3 +21,10 @@ console.log("myDataType of null is "+ typeof myDataType) //object
 
 myDataType = undefined;
 console.log("myDataType of undefined is "+ typeof myDataType) //object
+
+
+//symbol data type -
+
+mySym = Symbol("New Value");
+console.log("Symbol ", mySym);
+console.log("TypeOf Symbol ", typeof mySym);
