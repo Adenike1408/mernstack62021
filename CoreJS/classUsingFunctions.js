@@ -14,3 +14,5 @@ var userObj = new userClass("Luke", 21, "Main Street NY") //instantiating the cl
 console.log(userObj.age);
 
 console.log(userObj.getAddress())
+
+//create a student class and have an object initialized with you own name and print details
