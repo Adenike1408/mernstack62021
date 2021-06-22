@@ -17,7 +17,9 @@ var User = {
             }
         , 1000); //time in milliseconds   
         
-        //return this.name;
+        return this.name;
+
+        
     }
 }
 
