@@ -51,7 +51,7 @@ user.name = "Adenike";
 //3. Block and Functional Scope
 
 var index = undefined;
-
+ 
 for (index = 1; index <= 5; index++) {
     console.log(index);
 }
