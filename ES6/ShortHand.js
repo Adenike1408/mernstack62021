@@ -27,3 +27,5 @@ let animalSoundShortHand = {
  console.log("animal sound "+ animalSound) // object in incorrect format
 
  console.log("animal sound "+ JSON.stringify(animalSound)) // to parse in to object type
+
+ module.exports = {animalSoundShortHand};
