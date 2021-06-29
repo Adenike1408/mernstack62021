@@ -1,5 +1,57 @@
 // Destructuring helps us creating less number of variables and we can do direct assignments
 
+//2. Object destructuring
+
+let user = {
+    name : "Adenike",
+    address : {
+        address1 : "Add1",
+        address2 : "Add2"
+    },
+    marks : {
+        physics : 95,
+        chemistry : 90
+    }
+}
+
+// let address = user.address.address1
+// let address2 = user.address.address2
+// let markPhysics = user.marks.physics
+
+let {name, address : { address1 }, marks : {chemistry, maths = 99} } = user;
+
+console.log(address1)
+console.log(chemistry)
+console.log(maths)
+
+// print user name : 
+
+// object destructuring
+let user = {
+    fname : "John",
+    lname : "Doe",
+    age : 18,
+    
+}
+
+
+//nested object destructuring : print - react and redux along with three topics and name as well
+
+let student = {
+    name : "John",
+    session: "MERNStack",
+    age : 18,
+    topicsRating : {
+        coreJs : "coreJs-9",
+        ES6 : "ES6-9",
+        nodejs : "nodejs-9",
+        express : "express-9",
+        mongoDB : "mongoDB-9"
+    }
+}
+
+
+
 //1.  array : destructuring
 
 let destructArr = ["one","two","three"]
