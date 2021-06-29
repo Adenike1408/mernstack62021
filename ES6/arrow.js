@@ -34,3 +34,14 @@ var User = {
 }
 
 console.log(User.getName())
+
+// can you try solving this issue with arrow function -
+
+let obj = {
+    id: 42,
+    counter: function counter() {
+        setTimeout(function() {
+            console.log(this.id);
+        }, 1000);
+    }
+}
