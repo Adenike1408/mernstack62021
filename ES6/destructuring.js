@@ -33,9 +33,13 @@ let user = {
     age : 18,
     
 }
+let {lname, age, fisrtLane = "NY Street" } = user
 
+// console.log("Last Name " + lname)
+// console.log("Age " + age)
+// console.log("Address " + fisrtLane)
 
-//nested object destructuring : print - react and redux along with three topics and name as well
+//nested object destructuring 
 
 let student = {
     name : "John",
@@ -50,6 +54,11 @@ let student = {
     }
 }
 
+let {name, topicsRating : {ES6, react="react-9", redux="redux-9" } } = student;
+
+console.log(name)
+console.log(ES6)
+console.log(redux)
 
 
 //1.  array : destructuring
