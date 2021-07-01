@@ -35,3 +35,5 @@ console.log(promiseObj);
         })
 
 console.log("end of Line Execution");
+
+// create user object promise
