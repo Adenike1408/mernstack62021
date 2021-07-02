@@ -18,9 +18,9 @@ let pplSavedByCA = personsList.filter((person) => person.savedby == "CaptainAmer
 //console.log("personsList", personsList)
 
 //2. Give me a list of names who are saved by IronMan and put Sir in front of their names
-let pplSavedByIronMan = personsList.map((person)=> person.savedby == "IronMan" ? "Sir " +person.name : "").filter((p)=>p!=="")
+let pplSavedByIronMan = personsList.map((person)=> person.savedby == "IronMan" ? {"First Name" :"Sir " +person.name }: "").filter((p)=>p!=="")
 
-//console.log("pplSavedByIronMan", pplSavedByIronMan)
+console.log("pplSavedByIronMan", pplSavedByIronMan)
 //console.log("personsList", personsList)
 
 //3. If anyone is saved by Batman
@@ -33,8 +33,8 @@ let svdBySPMan = personsList.some(pesron => pesron.savedby === "SpiderMan")
 //4. Give me the number of persons saved by each super hero
 
 let savedByEachSuperHero = personsList.reduce((perviousVal, currentVal)=>{
-                    console.log("perviousVal", perviousVal )                
-                    console.log("currentVal", currentVal )
+                    //console.log("perviousVal", perviousVal )                
+                    //console.log("currentVal", currentVal )
                     //perviousVal.add(currentVal.savedby);
                     //return perviousVal;
                     
