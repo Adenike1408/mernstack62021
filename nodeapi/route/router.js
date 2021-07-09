@@ -3,6 +3,20 @@ let exprs = require("express");
 let router = exprs.Router(); //Router({caseSensitive:true})
 let TrainingModel = require("../DataModel/TrainingModel");
 
+router.get("/trainings", (req, res)=>{
+
+    TrainingModel.find((err, data)=>{
+        
+        if(!err){
+            res.json(data)
+        }else{
+            console.log("Error ", err)
+            res.send("Error occured");
+        }
+
+    })
+})
+
 router.get("/training", (req, res )=>{
     console.log("Query String" , req.query);
 
