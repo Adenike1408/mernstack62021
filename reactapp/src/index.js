@@ -1,0 +1,1 @@
+console.log("This is the entry point of my client side application shopping cart to be built in react")

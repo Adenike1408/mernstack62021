@@ -8,7 +8,8 @@ let TrainingSchema = new mongooseSchema({
                 sessionname : {type:String, required: true},
                 duration : Number,
                 instructor : String,
-                location : String
+                location : String,
+                students : Object //[{st1},{st2},{st2}]
             },
             {
                 versionKey: false //needs to set to false if we dont want __v to be saved, never set it to true
