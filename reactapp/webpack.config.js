@@ -60,8 +60,8 @@ webpackConfig = {
             path.join(SRC_DIR),
             // and so on...
           ] ,//__dirname+"/dist",
-        //hot: true,
-        inline: true,
+        //hot: true, //enable hot module runtime, swap  modified files in dev server with browser,  faster reload time
+        inline: true, //include web pack runtime,  websocket, browser sync, module loader
         host: "localhost", 
         //host: "local.synergiticit.com",
         port:9092,        
