@@ -1,6 +1,7 @@
-import React, {Component} from "react";
+import React, {Component, PureComponent} from "react";
 import Header from "../app/CommonComponents/HeaderComponent"; 
 
+//This is the class component created using React.Component class
 export default class App extends Component {
 
     constructor(props){
@@ -15,7 +16,12 @@ export default class App extends Component {
         // Virtual DOM - document object model
         return(
             <div> 
-                <Header name={"Hung"}/>
+                {/* <Header name={"Hung"} age={102}/> */}
+
+                <Header name={"Hung"} age={102}>
+                    <div>First div as a child from parent</div>
+                    <div>Second div as a child from parent</div>
+                </Header>
 
                 <h1>The very first react component. Basically App Component</h1>
                 <h1>My Name is {myname}</h1>
