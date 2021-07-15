@@ -1,5 +1,5 @@
 import React, {Component, PureComponent} from "react";
-import Header from "../app/CommonComponents/HeaderComponent"; 
+import Header, { Footer, pi } from "../app/CommonComponents/HeaderComponent"; 
 
 //This is the class component created using React.Component class
 export default class App extends Component {
@@ -26,7 +26,8 @@ export default class App extends Component {
                 <h1>The very first react component. Basically App Component</h1>
                 <h1>My Name is {myname}</h1>
                 <h2>Multiply {a*b}</h2>
-                
+                <h2>Value of pi - {pi}</h2>
+                <Footer />
             </div>
         )
     }

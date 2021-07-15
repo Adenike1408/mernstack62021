@@ -4,7 +4,7 @@ import {render} from "react-dom";
 
 import App from "./app/app"
 
-render(
+render( // this render is the one which is reponsible for your diff
     <App/>, //application that would be rendered on single page
     document.getElementById("root") //bootstrapping the application root container
 )

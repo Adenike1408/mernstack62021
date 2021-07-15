@@ -14,4 +14,16 @@ let Header = (props) => {
     )
 }
 
-export default Header;
+export default Header; //default export only one is allowed
+
+
+//named export 
+export function Footer(props){
+    return(
+        <Fragment >
+            <h1> Footer Component</h1>
+        </Fragment>
+    )
+};
+
+export const pi = 3.141;
