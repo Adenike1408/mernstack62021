@@ -26,4 +26,5 @@ export function Footer(props){
     )
 };
 
+//named export 
 export const pi = 3.141;
