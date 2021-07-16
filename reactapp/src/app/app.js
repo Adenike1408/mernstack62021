@@ -1,5 +1,10 @@
 import React, {Component, PureComponent} from "react";
-import Header, { Footer, pi } from "../app/CommonComponents/HeaderComponent"; 
+import "./app.css";
+import Header, { Footer as hFooter, pi } from "../app/CommonComponents/HeaderComponent"; 
+import Footer from "../app/CommonComponents/FooterComponent"; 
+import About from "../app/CommonComponents/AboutComponent"; 
+import Home from "../app/CommonComponents/HomeComponent"; 
+import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
 
 //This is the class component created using React.Component class
 export default class App extends Component {
@@ -36,22 +41,26 @@ export default class App extends Component {
         // JSX : React doesn't have any separate html templating so it creates html+js using below code
         // Virtual DOM - document object model
         return(
-            <div> 
+            <Router> 
                 {/* <Header name={"Hung"} age={102}/> */}
 
                 <Header name={"Hung"} age={102}>
                     <div>First div as a child from parent</div>
                     <div>Second div as a child from parent</div>
                 </Header>
-
-                <h1>The very first react component. Basically App Component</h1>
+                <Switch>
+                    <Route path="/home" exact component={Home} />
+                    <Route path="/about" exact component={About} />
+                    <Route path="/" component={Home} />
+                </Switch>
+                {/* <h1>The very first react component. Basically App Component</h1>
                 <h1>My Name is {myname}</h1>
                 <h2>Multiply {a*b}</h2>
                 <h2>Value of pi - {pi}</h2>
                 {this.sessionName}
-                <b>{this.state.name}</b>
+                <b>{this.state.name}</b> */}
                 <Footer />
-            </div>
+            </Router>
         )
     }
 
