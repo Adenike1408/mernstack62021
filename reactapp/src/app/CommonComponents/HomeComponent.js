@@ -25,9 +25,9 @@ export default class Home extends Component {
                     Address:
                          <input type="text" ref={this.inputAddress} placeholder="Please enter age"/>
                      </label> */}
-                    {/* <button className={"form-control btn btn-primary col-md-2"} onClick={()=> this.props.history.push("/about/2500")}>GoTo About Page</button>
+                    <button className={"form-control btn btn-primary col-md-2"} onClick={()=> this.props.history.push("/about/2500")}>GoTo About Page</button>
                     
-                    <button className={"form-control btn btn-primary col-md-2"} onClick={()=> this.props.history.push("/userhook")}>GoTo User Hooks</button>
+                    {/* <button className={"form-control btn btn-primary col-md-2"} onClick={()=> this.props.history.push("/userhook")}>GoTo User Hooks</button>
                       */}
                     {/* <img  src="/images/hm_pic4.jpg"/> */}
                 </div>
